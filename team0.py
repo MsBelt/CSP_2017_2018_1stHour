@@ -28,7 +28,7 @@ def move(my_history, their_history, my_score, their_score):
     # Decide whether to return 'c' or 'b'.
     chance = random.randint(1, 100) # This determines whether we collude or betray
     BETRAY = 80 # If the chance is higher than this, then we betray
-    if chance > BETRAY:
+    if chance >= BETRAY:
         return "b"
     else:
         return "c"
